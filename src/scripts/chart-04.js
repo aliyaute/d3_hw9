@@ -97,7 +97,7 @@ function ready(datapoints) {
     .enter()
     .append('circle')
     .attr('fill', function(d) {
-      if (d.key === 'France') {
+      if (d.key === 'Armenia') {
         return 'blue'
       } else {
         return 'grey'
@@ -105,7 +105,7 @@ function ready(datapoints) {
     })
     .attr('r', 3)
     .attr('cx', function(d) {
-      return xPositionScale(d.values[d.values.length - 1].Year)
+      return xPositionScale(d.values[d.values.length - 1].Date)
     })
     .attr('cy', function(d) {
       return yPositionScale(d.values[d.values.length - 1].Value)
@@ -128,7 +128,7 @@ function ready(datapoints) {
       }
     })
     .attr('x', function(d) {
-      return xPositionScale(d.values[d.values.length - 1].Year)
+      return xPositionScale(d.values[d.values.length - 1].Date)
     })
     .attr('y', function(d) {
       return yPositionScale(d.values[d.values.length - 1].Value)
